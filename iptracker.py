@@ -15,7 +15,7 @@ ip = args.ip[0]
 
 try:
     # Get data from the APIs
-    print 'Tracking IP location...'
+    print ('Tracking IP location...')
     try:
         country_basic_info = IPToCountry().get_country_basic_info_from_ip(ip)
     except urllib2.HTTPError as e:
